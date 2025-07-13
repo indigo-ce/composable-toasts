@@ -1,7 +1,7 @@
-# ComposableToasts
+# 🪻 composable-toasts
 
 A library to queue and display toasts using SwiftUI and The Composable
-Architecture.
+Architecture. It is part of the [Indigo Stack](https://indigostack.org).
 
 ## Usage
 

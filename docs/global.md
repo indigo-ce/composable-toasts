@@ -1,0 +1,1 @@
+/Users/kaishin/.dotfiles/tag-agent/agent/global.md
