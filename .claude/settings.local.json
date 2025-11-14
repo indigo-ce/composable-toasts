@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(swift test)"
+      "Bash(swift test)",
+      "Bash(git tag:*)",
+      "Bash(git push:*)"
     ],
     "deny": []
   }
