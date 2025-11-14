@@ -46,8 +46,8 @@ public struct ToastQueue {
         state.currentToast = nil
 
         return .merge(
-          .run { send in
-            try await self.clock.sleep(for: .seconds(1))
+          .run { [clock] send in
+            try await clock.sleep(for: .seconds(1))
             await send(.dequeue)
           },
           .cancel(id: state.currentToast?.config.id)
@@ -63,8 +63,8 @@ public struct ToastQueue {
 
         state.currentToast = .init(config: nextToastData)
 
-        return .run { send in
-          try await self.clock.sleep(for: .seconds(nextToastData.duration))
+        return .run { [clock] send in
+          try await clock.sleep(for: .seconds(nextToastData.duration))
           await send(.dismissCurrent)
         }
 
