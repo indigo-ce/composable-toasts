@@ -19,8 +19,8 @@ let package = Package(
     )
   ],
   dependencies: [
-    .package(url: "https://github.com/pointfreeco/swift-composable-architecture", from: "1.23.1"),
-    .package(url: "https://github.com/apple/swift-collections", from: "1.3.0"),
+    .package(url: "https://github.com/pointfreeco/swift-composable-architecture", from: "1.26.0"),
+    .package(url: "https://github.com/apple/swift-collections", from: "1.6.0"),
   ],
   targets: [
     // Targets are the basic building blocks of a package, defining a module or a test suite.

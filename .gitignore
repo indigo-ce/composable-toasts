@@ -8,3 +8,4 @@ DerivedData/
 .netrc
 .index-build/
 .claude/settings.local.json
+.claude/agent-memory/
